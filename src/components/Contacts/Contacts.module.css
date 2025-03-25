@@ -1,0 +1,22 @@
+.container_footer {
+  padding: 40px;
+  background-color: rgb(217, 218, 198);
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.nav_footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo_footer {
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.list_footer {
+  display: flex;
+  gap: 10px;
+}

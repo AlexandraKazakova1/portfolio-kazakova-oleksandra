@@ -5,7 +5,6 @@ import wathchcharm from "../../img//watchcharm.jpg";
 import phonebook from "../../img/phonebook.jpg";
 import WebStudio from "../../img/WebStudio.jpg";
 import s from "./Projects.module.css";
-import svg from "../../img/sprite.svg";
 
 const Projects = () => {
   return (
