@@ -3,7 +3,7 @@ import s from "./About.module.css";
 
 const About = () => {
   return (
-    <div className={s.container_about}>
+    <div className={s.container_about} id="about">
       <h2 className={s.about_title}>About me</h2>
       <p className={s.about_text}>
         Hi! I’m Oleksandra, a passionate front-end developer dedicated to

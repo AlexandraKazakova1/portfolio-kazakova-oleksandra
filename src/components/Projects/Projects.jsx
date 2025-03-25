@@ -8,7 +8,7 @@ import s from "./Projects.module.css";
 
 const Projects = () => {
   return (
-    <section className={s.container_projects}>
+    <section className={s.container_projects} id="projects">
       <h2 className={s.title_projects}>My Projects</h2>
       <div>
         <ul className={s.list_projects}>
@@ -27,7 +27,7 @@ const Projects = () => {
                   target="_blank"
                   href="https://github.com/elenka-lev/final-project-frontend-1"
                 >
-                  visit GitHab
+                  visit GitHub
                 </a>
                 <a
                   className={s.link_projects}
@@ -54,7 +54,7 @@ const Projects = () => {
                   target="_blank"
                   href="https://github.com/Evhenii18/Our-group-js-project"
                 >
-                  visit GitHab
+                  visit GitHub
                 </a>
                 <a
                   className={s.link_projects}
@@ -81,7 +81,7 @@ const Projects = () => {
                   target="_blank"
                   href="https://github.com/Evhenii18/html-project"
                 >
-                  visit GitHab
+                  visit GitHub
                 </a>
                 <a
                   className={s.link_projects}
@@ -108,7 +108,7 @@ const Projects = () => {
                   target="_blank"
                   href="https://github.com/AlexandraKazakova1/goit-react-hw-08"
                 >
-                  visit GitHab
+                  visit GitHub
                 </a>
                 <a
                   className={s.link_projects}
@@ -135,7 +135,7 @@ const Projects = () => {
                   target="_blank"
                   href="https://github.com/AlexandraKazakova1/goit-markup-hw-06"
                 >
-                  visit GitHab
+                  visit GitHub
                 </a>
                 <a
                   className={s.link_projects}

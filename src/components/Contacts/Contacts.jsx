@@ -4,20 +4,20 @@ import s from "./Contacts.module.css";
 
 const Contacts = () => {
   return (
-    <div className={s.container_footer}>
+    <div className={s.container_footer} id="contacts">
       <nav className={s.nav_footer}>
         <a href={<Hero />} className={s.logo_footer}>
           Oleksandra Kazakova
         </a>
         <ul className={s.list_footer}>
           <li>
-            <a href="">About</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="">Projects</a>
+            <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="">Contacts</a>
+            <a href="#contacts">Contacts</a>
           </li>
         </ul>
         {/* <div class="menu-icon">
