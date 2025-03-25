@@ -1,0 +1,19 @@
+.container_about {
+}
+.about_title {
+  font-weight: 600;
+  font-size: 32px;
+  margin-top: 20px;
+}
+.about_min_title {
+}
+.about_text {
+  color: rgb(102, 102, 102);
+  text-align: center;
+  margin-top: 20px;
+}
+.tech_skills {
+  border-radius: 20px;
+  background-color: rgb(217, 218, 198);
+  padding: 20px;
+}

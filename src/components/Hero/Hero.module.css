@@ -1,0 +1,15 @@
+.container_hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgb(217, 218, 198);
+}
+
+.title {
+  text-align: center;
+}
+
+.text {
+}
