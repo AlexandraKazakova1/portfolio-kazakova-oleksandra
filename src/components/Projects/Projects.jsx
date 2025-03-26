@@ -12,7 +12,7 @@ const Projects = () => {
       <h2 className={s.title_projects}>My Projects</h2>
       <div>
         <ul className={s.list_projects}>
-          <li className={s.item_projects}>
+          <li className={s.item_projects} style={{ "--index": 1 }}>
             <h3 className={s.name_projects}>AquaTrack</h3>
             <img
               className={s.img_projects}
@@ -39,7 +39,7 @@ const Projects = () => {
               </div>
             </div>
           </li>
-          <li className={s.item_projects}>
+          <li className={s.item_projects} style={{ "--index": 2 }}>
             <h3 className={s.name_projects}>Lloyd Jefferson</h3>
             <img
               className={s.img_projects}
@@ -66,7 +66,7 @@ const Projects = () => {
               </div>
             </div>
           </li>
-          <li className={s.item_projects}>
+          <li className={s.item_projects} style={{ "--index": 3 }}>
             <h3 className={s.name_projects}>Watchcharm</h3>
             <img
               className={s.img_projects}
@@ -93,7 +93,7 @@ const Projects = () => {
               </div>
             </div>
           </li>
-          <li className={s.item_projects}>
+          <li className={s.item_projects} style={{ "--index": 4 }}>
             <h3 className={s.name_projects}>PhoneBook</h3>
             <img
               className={s.img_projects}
@@ -120,7 +120,7 @@ const Projects = () => {
               </div>
             </div>
           </li>
-          <li className={s.item_projects}>
+          <li className={s.item_projects} style={{ "--index": 5 }}>
             <h3 className={s.name_projects}>WebStudio</h3>
             <img
               className={s.img_projects}

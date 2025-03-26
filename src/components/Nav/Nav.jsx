@@ -18,32 +18,34 @@ const Nav = () => {
   };
 
   return (
-    <div className={s.container_nav}>
+    <div className={s.container_nav} id="nav">
       <nav className={s.nav}>
-        <a href="#" className={s.logo}>
+        <a href="#nav" className={s.logo}>
           Oleksandra Kazakova
         </a>
         <ul className={s.list}>
           <li>
-            <a href="#about">About</a>
+            <a className={s.item} href="#about">
+              About
+            </a>
           </li>
           <li>
-            <a href="#projects">Projects</a>
+            <a className={s.item} href="#projects">
+              Projects
+            </a>
           </li>
           <li>
-            <a href="#contacts">Contacts</a>
+            <a className={s.item} href="#contacts">
+              Contacts
+            </a>
           </li>
         </ul>
-
-        {/* Кнопка открытия модального меню */}
         <button className={s.menu_icon_btn} onClick={toggleModal}>
           <svg className={s.menu_svg} width="32" height="32">
             <use href={`${sprite}#icon-header-menu`}></use>
           </svg>
         </button>
       </nav>
-
-      {/* Модальное меню */}
       {isModalOpen && (
         <div className={s.header_modal} onClick={handleBackgroundClick}>
           <nav className={s.modal_nav}>

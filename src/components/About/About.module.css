@@ -14,6 +14,7 @@
 }
 .tech_skills {
   border-radius: 20px;
-  background-color: rgb(217, 218, 198);
+  background: linear-gradient(45deg, rgb(217, 218, 198), #444);
   padding: 20px;
+  color: #fff9e7;
 }

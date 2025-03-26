@@ -3,6 +3,7 @@
   margin-bottom: 20px;
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
+  background-color: rgb(252, 252, 237);
 }
 
 .nav {
@@ -14,11 +15,37 @@
 .logo {
   font-weight: bold;
   line-height: 1.5;
+  animation: glowEffect 2s infinite ease-in-out;
+}
+
+.logo:hover {
+  color: rgb(19, 17, 129);
+}
+
+@keyframes glowEffect {
+  0% {
+    text-shadow: 0 0 10px white, 0 0 20px white;
+  }
+  50% {
+    text-shadow: 0 0 20px rgb(126, 126, 122), 0 0 40px rgb(110, 110, 109);
+  }
+  100% {
+    text-shadow: 0 0 10px white, 0 0 20px white;
+  }
 }
 
 .list {
   display: flex;
   gap: 10px;
+}
+
+.item {
+  color: black;
+}
+
+.item:hover {
+  color: rgb(19, 17, 129);
+  font-weight: bold;
 }
 
 /* Кнопка меню */
@@ -32,7 +59,9 @@
 .menu_svg {
   fill: #333;
 }
-
+.menu_svg:hover {
+  fill: rgb(19, 17, 129);
+}
 /* Модальное меню */
 .header_modal {
   position: fixed;
