@@ -81,3 +81,18 @@
   font-weight: 600;
   font-size: 32px;
 }
+
+.title_and_more {
+  display: flex;
+  justify-content: space-between;
+}
+
+.moreBtn {
+  font-size: 30px;
+  transition: font-size 0.3s, font-weight 0.3s;
+}
+
+.moreBtn:hover {
+  font-size: 36px;
+  font-weight: bold;
+}

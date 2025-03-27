@@ -1,74 +1,70 @@
-import React, { useState } from "react";
+import React from "react";
 import s from "./Contacts.module.css";
-import sprite from "../../img/sprite.svg";
+import sprite from "../../img/symbol-defs.svg";
 
 const Contacts = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const toggleModal = () => {
-    setIsModalOpen((prev) => !prev);
-  };
-
-  const handleBackgroundClick = (e) => {
-    if (e.target.classList.contains(s.header_modal)) {
-      setIsModalOpen(false);
-    }
-  };
   return (
-    <div className={s.container_footer} id="contacts">
-      <nav className={s.nav_footer}>
-        <a href="#nav" className={s.logo_footer}>
-          Oleksandra Kazakova
-        </a>
-        <ul className={s.list_footer}>
-          <li>
-            <a className={s.item} href="#about">
-              About
-            </a>
-          </li>
-          <li>
-            <a className={s.item} href="#projects">
-              Projects
-            </a>
-          </li>
-          <li>
-            <a className={s.item} href="#contacts">
-              Contacts
-            </a>
-          </li>
-        </ul>
-        <button className={s.menu_icon_btn} onClick={toggleModal}>
-          <svg className={s.menu_svg} width="32" height="32">
-            <use href={`${sprite}#icon-header-menu`}></use>
+    <div className={s.contacts} id="contacts">
+      <p className={s.contacts_text}>Social Media</p>
+      <div className={s.contacts_social}>
+        <a
+          href="https://www.linkedin.com/in/oleksandrakazakova/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={s.link}
+        >
+          <svg className={s.icon}>
+            <use href={`${sprite}#icon-linkedin`}></use>
           </svg>
-        </button>
-      </nav>
-      {isModalOpen && (
-        <div className={s.header_modal} onClick={handleBackgroundClick}>
-          <nav className={s.modal_nav}>
-            <a href="../Hero/Hero.jsx" className={s.logo}>
-              Oleksandra Kazakova
-            </a>
-            <ul className={s.modal_list}>
-              <li>
-                <a href="#about" className={s.modal_link}>
-                  About me
-                </a>
-              </li>
-              <li>
-                <a href="#projects" className={s.modal_link}>
-                  Projects
-                </a>
-              </li>
-              <li>
-                <a href="#contacts" className={s.modal_link}>
-                  Contacts
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      )}
+        </a>
+        <a
+          href="https://github.com/AlexandraKazakova1/"
+          target="_blank"
+          className={s.link}
+        >
+          <svg className={s.icon}>
+            <use href={`${sprite}#icon-github`}></use>
+          </svg>
+        </a>
+      </div>
+      <p className={s.contacts_text}>My Contacts</p>
+      <div className={s.contacts_social}>
+        <a
+          href="mailto:zemzikova.oleksandra@gmail.com"
+          target="_blank"
+          className={s.link}
+        >
+          <svg className={s.icon}>
+            <use href={`${sprite}#icon-envelop`}></use>
+          </svg>
+        </a>
+        <a href="tel:+380631210716" className={s.link}>
+          <svg className={s.icon}>
+            <use href={`${sprite}#icon-phone`}></use>
+          </svg>
+        </a>
+
+        <a
+          href="https://t.me/OleksandraKazak"
+          target="_blank"
+          className={s.link}
+        >
+          <svg className={s.icon}>
+            <use href={`${sprite}#icon-telegram`}></use>
+          </svg>
+        </a>
+      </div>
+      <p className={s.contacts_text}>Download Resume</p>
+      <div className={s.contacts_social}>
+        <a
+          href="../../../public/Oleksandra_Kazakova_Front-end_developer.pdf"
+          className={s.link}
+        >
+          <svg className={s.icon}>
+            <use href={`${sprite}#icon-file-pdf`}></use>
+          </svg>
+        </a>
+      </div>
     </div>
   );
 };

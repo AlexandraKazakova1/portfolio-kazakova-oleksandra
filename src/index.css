@@ -27,7 +27,7 @@ html {
 body {
   font-family: "Poppins", system-ui;
   color: var(--black);
-  background-color: #d3c8ae;
+  background: linear-gradient(75deg, rgb(246, 247, 243), #d3c8ae);
 }
 
 *,

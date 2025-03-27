@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import s from "./Nav.module.css";
+import s from "./Footer.module.css";
 import sprite from "../../img/sprite.svg";
 import Modal from "../Modal/Modal";
 
-const Nav = () => {
+const Footer = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const toggleModal = () => {
@@ -11,12 +11,12 @@ const Nav = () => {
   };
 
   return (
-    <div className={s.container_nav} id="nav">
-      <nav className={s.nav}>
-        <a href="#nav" className={s.logo}>
+    <div className={s.container_footer} id="contacts">
+      <nav className={s.nav_footer}>
+        <a href="#nav" className={s.logo_footer}>
           Oleksandra Kazakova
         </a>
-        <ul className={s.list}>
+        <ul className={s.list_footer}>
           <li>
             <a className={s.item} href="#about">
               About
@@ -44,4 +44,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default Footer;
