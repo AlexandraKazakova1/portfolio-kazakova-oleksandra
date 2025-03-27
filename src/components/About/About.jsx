@@ -18,8 +18,8 @@ const About = () => {
       </p>
       <h2 className={s.about_title}>Tech Skills</h2>
       <div className={s.tech_skills}>
-        <h3 className={s.about_min_title}>Front-end Development:</h3>
-        <ul>
+        <ul className={s.tech_skills_list}>
+          <h3 className={s.about_min_title}>Front-end Development:</h3>
           <li>
             HTML5 & CSS3 - Crafting clean, semantic markup and styling for
             modern web interfaces
@@ -38,7 +38,7 @@ const About = () => {
           </li>
           <li>Redux.js - Handling complex application state and data flow</li>
         </ul>
-        <ul>
+        <ul className={s.tech_skills_list}>
           <h3 className={s.about_min_title}>
             Back-end & Full-stack Development:
           </h3>
@@ -46,7 +46,7 @@ const About = () => {
           <li>Node.js - Developing server-side logic and APIs</li>
           <li>MongoDB - Managing and structuring NoSQL databases</li>
         </ul>
-        <ul>
+        <ul className={s.tech_skills_list}>
           <h3 className={s.about_min_title}>Tools & Workflow:</h3>
 
           <li>Git & GitHub - Version control and collaborative development</li>

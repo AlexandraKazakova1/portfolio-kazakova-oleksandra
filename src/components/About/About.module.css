@@ -16,5 +16,10 @@
   border-radius: 20px;
   background: linear-gradient(45deg, rgb(217, 218, 198), #444);
   padding: 20px;
-  color: #fff9e7;
+  color: #fcf8ee;
+}
+
+.tech_skills_list {
+  list-style-type: square;
+  padding: 20px;
 }
