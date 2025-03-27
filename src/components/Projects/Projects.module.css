@@ -89,10 +89,12 @@
 
 .moreBtn {
   font-size: 30px;
-  transition: font-size 0.3s, font-weight 0.3s;
+  transition: color 0.3s ease-in-out;
+  width: 40px;
+  height: 40px;
 }
 
 .moreBtn:hover {
-  font-size: 36px;
-  font-weight: bold;
+  color: #0056b3;
+  transform: scale(1.1);
 }
