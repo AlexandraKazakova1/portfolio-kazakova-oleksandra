@@ -22,13 +22,13 @@ const ProjectModal = ({ project, onClose }) => {
   return (
     <div
       className={`${s.modalOverlay} ${isVisible ? s.show : ""}`}
-      onClick={handleClose} // Викликаємо handleClose для коректного закриття
+      onClick={handleClose}
     >
       <div className={s.modalContent} onClick={(e) => e.stopPropagation()}>
         <button className={s.closeBtn} onClick={handleClose}>
           &times;
         </button>
-        <h2>{project?.title}</h2> {/* Безпечний доступ */}
+        <h2>{project?.title}</h2>
         <img className={s.modalImg} src={project?.image} alt={project?.title} />
         <p className={s.modal_text}>{project?.description_modal}</p>
         <div className={s.modalLinks}>
